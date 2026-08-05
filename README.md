@@ -35,7 +35,7 @@
 
 
 เข้าใช้งานได้ที่:
-- หน้าผู้ป่วย: [http://localhost:3000](http://localhost:3000)](https://agnos-test-rho.vercel.app/)
-- หน้าเจ้าหน้าที่: [http://localhost:3000/staff](http://localhost:3000/staff)](https://agnos-test-rho.vercel.app/staff)
+- หน้าผู้ป่วย: https://agnos-test-rho.vercel.app/
+- หน้าเจ้าหน้าที่: https://agnos-test-rho.vercel.app/staff
 
 ---
