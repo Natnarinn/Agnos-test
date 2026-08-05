@@ -17,7 +17,6 @@
 | `/` | ผู้ป่วย | กรอกแบบฟอร์มลงทะเบียน |
 | `/staff` | เจ้าหน้าที่ | ติดตามข้อมูลการลงทะเบียนแบบเรียลไทม์ |
 
----
 
 ### ✨ ฟีเจอร์หลัก
 
@@ -32,7 +31,6 @@
 - **การ์ดข้อมูลผู้ป่วยรายบุคคล**: แสดง progress bar, ข้อมูลติดต่อ, ฟิลด์ล่าสุดที่แก้ไข, ปุ่มดูรายละเอียดและลบข้อมูล
 - **Real-time Active indicator**: แสดงสถานะการเชื่อมต่อแบบเรียลไทม์อยู่ตลอดเวลา
 
----
 
 ### 🛠️ เทคโนโลยีที่ใช้
 
@@ -60,7 +58,6 @@ The project consists of **2 main pages**:
 | `/` | Patient | Fill out the registration form |
 | `/staff` | Staff | Monitor registration data in real time |
 
----
 
 ### ✨ Key Features
 
@@ -75,7 +72,6 @@ The project consists of **2 main pages**:
 - **Individual patient cards**: progress bar, contact info, last field edited, view details and delete buttons
 - **Real-time Active indicator**: always-on connection status
 
----
 
 ### 🛠️ Tech Stack
 
