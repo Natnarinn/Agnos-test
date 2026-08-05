@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 AGNOS — Patient Registration & Live Monitoring System
 
-## Getting Started
+## 👋 แนะนำโปรเจค
 
-First, run the development server:
+**AGNOS** — ระบบนี้ทำให้ทุกการพิมพ์ของผู้ป่วย **sync แบบ real-time** ไปยังหน้าจอของเจ้าหน้าที่ทันที ช่วยให้ติดตามสถานะ จัดการคิว และเห็นความคืบหน้าของแต่ละคนได้แบบไม่ต้องรีเฟรชหน้าเว็บ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+โปรเจคนี้ประกอบด้วย **2 หน้าหลัก**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| หน้า          | ผู้ใช้งาน   | หน้าที่                              |
+| ------------- | ----------- | ------------------------------------ |
+| `/` (หน้าแรก) | ผู้ป่วย     | กรอกแบบฟอร์มลงทะเบียน                |
+| `/staff`      | เจ้าหน้าที่ | ติดตามข้อมูลการลงทะเบียนแบบเรียลไทม์ |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ ฟีเจอร์หลัก
 
-## Learn More
+### 📝 หน้าแรก — Patient Registration Form
 
-To learn more about Next.js, take a look at the following resources:
+- แบบฟอร์มลงทะเบียนสำหรับผู้ป่วย (ชื่อ, เบอร์โทร, อีเมล ฯลฯ)
+- ข้อมูลที่กรอกจะถูกส่งขึ้นระบบแบบ real-time ทันทีที่พิมพ์ (ไม่ต้องกด "ส่ง" ก่อนถึงจะเห็นบน dashboard)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📊 หน้า `/staff` — Staff Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Live Sync**: ดูข้อมูลผู้ป่วยที่กำลังกรอกฟอร์มแบบเรียลไทม์
+- **สรุปภาพรวม**: จำนวนผู้ลงทะเบียนทั้งหมด, จำนวนคนที่กำลังพิมพ์อยู่, จำนวนที่ส่งฟอร์มสำเร็จ, และ % ความคืบหน้าเฉลี่ย
+- **ค้นหา & กรองข้อมูล**: ค้นหาด้วยชื่อ, อีเมล, เบอร์โทร หรือ ID พร้อมตัวกรองสถานะ (ทั้งหมด / กำลังพิมพ์ / ส่งแล้ว)
+- **การ์ดข้อมูลผู้ป่วยรายบุคคล**: แสดง progress bar, ข้อมูลติดต่อ, ฟิลด์ล่าสุดที่แก้ไข, ปุ่มดูรายละเอียดและลบข้อมูล
+- **Real-time Active indicator**: แสดงสถานะการเชื่อมต่อแบบเรียลไทม์อยู่ตลอดเวลา
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ เทคโนโลยีที่ใช้
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: React / Next.js
+- **Real-time sync**: BroadcastChannel API + localStorage — sync ข้อมูลข้าม tab/หน้าต่างแบบ real-time
+- **Styling**: Tailwind CSS
+
+เข้าใช้งานได้ที่:
+
+- หน้าผู้ป่วย: [http://localhost:3000](http://localhost:3000)
+- หน้าเจ้าหน้าที่: [http://localhost:3000/staff](http://localhost:3000/staff)
+
+---

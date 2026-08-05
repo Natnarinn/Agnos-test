@@ -130,7 +130,7 @@ export function PatientProvider({ children }: { children: React.ReactNode }) {
       }
     };
 
-    // ลบ draft ที่ยังไม่กดส่ง (unsubmitted) เมื่อผู้ป่วยปิดหน้าจอ/แท็บ
+  
     const handleUnload = () => {
       const activeSessId = sessionStorage.getItem(SESSION_KEY_ID);
       if (!activeSessId) return;
@@ -148,7 +148,7 @@ export function PatientProvider({ children }: { children: React.ReactNode }) {
             channel.postMessage(currentMap);
           }
         } catch {
-          // ignore
+         
         }
       }
     };
