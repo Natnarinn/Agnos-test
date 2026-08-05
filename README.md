@@ -30,8 +30,8 @@
 ## 🛠️ เทคโนโลยีที่ใช้
 
 - **Frontend**: React / Next.js
-- **Real-time sync**: BroadcastChannel API + localStorage — sync ข้อมูลข้าม tab/หน้าต่างแบบ real-time โดยไม่ต้องพึ่ง backend หรือ server ใดๆ (ทำงานฝั่ง client ล้วน)
-- **Styling**: (ระบุ เช่น Tailwind CSS)
+- **Real-time sync**: BroadcastChannel API + localStorage — sync ข้อมูลข้าม tab/หน้าต่างแบบ real-time 
+- **Styling**: Tailwind CSS
 
 
 เข้าใช้งานได้ที่:
